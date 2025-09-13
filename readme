@@ -1,0 +1,37 @@
+# Cyber Log Analysis
+
+A simple cybersecurity practice project for detecting suspicious activity in server logs.  
+This project simulates the work of a Security Analyst by parsing access logs, identifying failed login attempts, and flagging potential brute-force attacks.
+
+---
+
+## 📌 Overview
+- Reads a sample `access.log` file.
+- Detects failed login attempts (`401` status codes).
+- Counts attempts per IP address.
+- Flags IPs with **3 or more failed logins** as suspicious.
+
+---
+
+## ⚙️ How to Run
+1. Clone this repo:
+   ```bash
+   git clone https://github.com/yourusername/cyber-log-analysis.git
+   cd cyber-log-analysis
+
+
+<!-- run this script -->
+python analyze_logs.py
+
+
+<!-- output: -->
+Suspicious IPs (more than 3 failed logins):
+10.0.0.5 -> 3 failed attempts
+
+
+<!-- structure -->
+cyber-log-analysis/
+│
+├── access.log          # Mock log file with sample data
+├── analyze_logs.py     # Python script to analyze logs
+└── README.md           # Project documentation
