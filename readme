@@ -35,3 +35,6 @@ cyber-log-analysis/
 ├── access.log          # Mock log file with sample data
 ├── analyze_logs.py     # Python script to analyze logs
 └── README.md           # Project documentation
+
+
+I added a "Detection Rules" section, and a report output example
